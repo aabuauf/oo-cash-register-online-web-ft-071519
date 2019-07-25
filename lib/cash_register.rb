@@ -25,10 +25,11 @@ class CashRegister
    
    end 
  #  binding.pry
+ @total = price * qty
    @price = price
    @total1 = @total1+ price * qty
    
-   @total = price * qty
+   
    
    return @total1
  
