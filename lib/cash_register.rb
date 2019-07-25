@@ -16,7 +16,7 @@ class CashRegister
   
   def add_item(item,price,qty = 1)
    i=0
-   binding.pry
+ 
    while i< qty.to_i do
     @allItems << item
     self.total+= price
