@@ -23,13 +23,14 @@ class CashRegister
     i+=1
    
    end 
- #  binding.pry
-   @price = price
-   total1 = @total+ price * qty
-   binding.pry
-   @total = price * qty
+
    
-   return total1
+   if @total == 0 
+     @total = price * qty
+    else
+     @total = @total+ price * qty
+    end
+    
   end
   
   def apply_discount
