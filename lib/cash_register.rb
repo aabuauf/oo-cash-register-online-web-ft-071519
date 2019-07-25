@@ -26,7 +26,7 @@ class CashRegister
  #  binding.pry
    @price = price
    total1 = @total+ price * qty
-   binding.pry
+  
    @total = price * qty
    
    return total1
