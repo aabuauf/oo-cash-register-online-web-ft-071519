@@ -19,16 +19,16 @@ class CashRegister
    
    while i< qty.to_i do
     @allItems << item
-   self.total+= price
+   # self.total+= price
     i+=1
    
    end 
  #  binding.pry
    @price = price
- #  @total = @total+ price * qty
- #  @total = price * qty
+   total1 = @total+ price * qty
+   @total = price * qty
    
- #  return total1
+   return total1
   end
   
   def apply_discount
