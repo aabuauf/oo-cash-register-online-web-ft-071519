@@ -21,10 +21,10 @@ class CashRegister
     i+=1
    end 
    @price = price
-   total1 = @total+ price * qty
-   @total = price * qty
+   @total = @total+ price * qty
+ #  @total = price * qty
    
-   return total1
+ #  return total1
   end
   
   def apply_discount
