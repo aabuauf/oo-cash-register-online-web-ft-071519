@@ -23,7 +23,7 @@ class CashRegister
     i+=1
    
    end 
- #  binding.pry
+   binding.pry
    @price = price
  #  @total = @total+ price * qty
  #  @total = price * qty
