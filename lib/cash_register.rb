@@ -19,9 +19,10 @@ class CashRegister
    while i< qty.to_i do
     @allItems << item
     i+=1
+   @total = @total+ price
    end 
    @price = price
-   @total = @total+ price * qty
+ #  @total = @total+ price * qty
  #  @total = price * qty
    
  #  return total1
