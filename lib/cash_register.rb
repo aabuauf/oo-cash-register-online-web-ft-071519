@@ -20,7 +20,7 @@ class CashRegister
    while i< qty.to_i do
     @allItems << item
     i+=1
-   @total = @total+ price
+   self.total+= price
    end 
    binding.pry
    @price = price
