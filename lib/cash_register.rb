@@ -22,6 +22,7 @@ class CashRegister
     i+=1
    @total = @total+ price
    end 
+   binding.pry
    @price = price
  #  @total = @total+ price * qty
  #  @total = price * qty
@@ -30,7 +31,7 @@ class CashRegister
   end
   
   def apply_discount
-binding.pry
+
    @total =@total - @total * @discount/100
 
     if @total == 0 
